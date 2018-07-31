@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpprogs\ShortUrl;
+namespace Sergeypechenyuk\ShortUrl;
 
 use Illuminate\Support\ServiceProvider;
 

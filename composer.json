@@ -1,12 +1,12 @@
 {
     "name": "sergeypechenyuk/short-url",
     "description": "Create short URL",
-	"license": "MIT",
+    "license": "MIT",
     "authors": [
         {
             "name": "Sergey Pechenyuk",
             "email": "sergey.pechenyuk@gmail.com",
-			"role": "Developer"
+	    "role": "Developer"
         }
     ],
     "minimum-stability": "dev",

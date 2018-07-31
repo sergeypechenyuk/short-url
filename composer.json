@@ -1,0 +1,22 @@
+{
+    "name": "sergey.pechenyuk/short-url",
+    "description": "Create short URL",
+    "version": "1.0.0",
+	"license": "MIT",
+    "authors": [
+        {
+            "name": "Sergey Pechenyuk",
+            "email": "sergey.pechenyuk@gmail.com",
+			"role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0"
+    },
+	"autoload": {
+        "psr-4": {
+            "Phpprogs\\ShortUrl\\": "src"
+        }
+    }
+}

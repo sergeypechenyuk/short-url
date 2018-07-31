@@ -11,6 +11,6 @@ class ShortUrl extends Facade {
      */
     protected static function getFacadeAccessor()
     {
-        return 'short-url';
+        return 'shorturl';
     }
 }

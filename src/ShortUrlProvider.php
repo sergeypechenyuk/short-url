@@ -3,6 +3,7 @@
 namespace Sergeypechenyuk\ShortUrl;
 
 use Illuminate\Support\ServiceProvider;
+use Sergeypechenyuk\ShortUrl\ShortUrl;
 
 class ShortUrlProvider extends ServiceProvider
 {
@@ -13,7 +14,9 @@ class ShortUrlProvider extends ServiceProvider
      */
     public function boot()
     {
-        dd(22);
+        $this->publishes([
+            __DIR__.'/config/shorturl.php' => config_path('shorturl.php'),
+        ]);
     }
 
     /**
@@ -23,6 +26,8 @@ class ShortUrlProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind('shorturl', function() {
+            return new ShortUrl();
+        });
     }
 }
